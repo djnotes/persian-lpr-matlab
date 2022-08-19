@@ -1,0 +1,23 @@
+Note:(1/26/2014)
+Neural.m was improved.
+Problem with recognition of images was fixed. 
+Accuracy of recognition was improved by modifying 
+network training function parameters(e.g. net.trainParam.goal,
+net.trainParam.min_grad,etc.).
+
+LPR2.m gets a car's image and extracts digit images out 
+of the plate. Note that characters are not extracted.
+
+Neural.m reads a dataset consisting of known digit images.
+It then defines a target set to help the neural network 
+learn what every digit should look like. Finally a new digit
+is read from disk and recognized via the trained network. 
+Note that feature extraction has been used on training dataset
+to reduce processing time. Also, data has been normalized 
+before using in the neural network. 
+
+
+
+Copyright(C) Mahdi Haghgoo January 2014, 
+Shamsipour Inst.,Tehran
+
